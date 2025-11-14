@@ -59,7 +59,7 @@
 
         client.on('connect', () => {
             console.log('Connected to MQTT broker');
-            client.subscribe('car/gps', (err) => { //<<<<<<<<UBAH TOPIK INI 'car/gps'
+            client.subscribe('bus/gps', (err) => { //<<<<<<<<UBAH TOPIK INI 'car/gps'
                 if (!err) {
                     console.log('Subscribed to car/gps topic');
                 }
@@ -82,7 +82,7 @@
                     Wanita: ${Wanita || 0}<br>
                     Pria: ${Pria || 0}<br>
                     Suhu: ${Suhu || '--'}°C<br>
-                    Baterai: ${Baterai || '--'}%<br>
+                    Bensin: ${Bensin || '--'}%<br>
                     Kecepatan: ${Kecepatan || '--'} km/jam
                 `;
 
